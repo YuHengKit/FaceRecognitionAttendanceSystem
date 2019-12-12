@@ -16,8 +16,8 @@ URL = 'http://127.0.0.1:8000/api/attendance/'
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 cam = cv2.VideoCapture(0)
-cam.set(3, 640) # set video widht
-cam.set(4, 480) # set video height
+cam.set(3, 320) # set video widht
+cam.set(4, 240) # set video height
 # Define min window size to be recognized as a face
 minW = 0.2*cam.get(3)
 minH = 0.2*cam.get(4)
@@ -56,7 +56,7 @@ while True:
                 print('{}: {}'.format(user, 'IN' if data['inout'] else 'OUT'))
             else:
                 print('Unknown user')
-            time.sleep(5)
+            time.sleep(10)
     cv2.namedWindow('Face Detection', cv2.WINDOW_NORMAL)
     cv2.imshow('Face Detection',img)
 
