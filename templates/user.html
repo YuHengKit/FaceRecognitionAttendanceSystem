@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Users{% endblock %}
+{% block content %}
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>#Id</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>E-mail</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for b in users %}
+        <tr id = {{ b.id }}>
+            <td>{{ b.id}}</td>
+            <td>{{ b.first_name}} {{ b.last_name}}</td>
+            <td>{{ b.phone }}</td>
+            <td>{{ b.e_mail}}</td>
+            {% load static %}
+            <td><a href={%  url 'profile' id=b.id%}><button type="button" class="btn btn-xs btn-info">View</button></a>&nbsp&nbsp<a href={%  url 'edituser' id=b.id%}><button type="button" class="btn btn-xs btn-warning">Edit</button></a>&nbsp&nbsp<button id="delete" type="button" class="btn btn-xs btn-danger" onclick="deleteUser({{ b.id }},'{{ b.first_name }}','{{ b.last_name }}')">Delete</button></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
+{% block javascript %}
+    <script src = "{% static 'js/users.js' %}"></script>
+{% endblock %}

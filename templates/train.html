@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block css %}
+    <link href="{% static 'css/train.css' %}" rel="stylesheet">
+{% endblock %}
+{% block title %}Train{% endblock %}
+{% block content %}
+    {% if request.GET.status == 'untrained' %}
+        <div class="col-lg-4">
+            <div class="alert alert-dismissable alert-warning">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Untrained! </strong>You need train the model.
+                <a href="#" class="alert-link">Afterwards, you can recognize by camera or photo.</a>
+            </div>
+        </div>
+    {% else %}
+        <div class="col-lg-4"></div>
+    {% endif %}
+    <div class="col-lg-4">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                <h3 class="panel-title">Train the model</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Click to start Training process. It may take several minutes.
+                </p>
+                <p>
+                    Note that training results a new training model and <strong>overwrite</strong> the old one.
+                </p>
+                <button id="train" class="btn btn-danger">Train</button>
+            </div>
+        </div>
+        <div id="loader"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="alert alert-dismissable alert-success" style="display: none">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Trained! </strong>Process took <span id="duration"></span> seconds.<br>
+                <a href="#" class="alert-link">Old model has been overridden!</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascript %}
+    <script src="{% static 'js/train.js' %}"></script>
+{% endblock %}

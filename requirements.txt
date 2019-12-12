@@ -1,0 +1,2 @@
+psycopg2==2.7.1
+rest_framework==3.6.3

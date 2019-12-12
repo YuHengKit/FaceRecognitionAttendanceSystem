@@ -1,0 +1,35 @@
+
+#search{
+    width: 15%;
+    font-size: 16px;
+    padding: 12px 20px 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+#search1{
+    width: 17%;
+    font-size: 16px;
+    padding: 12px 20px 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+#search2{
+    width: 20%;
+    font-size: 16px;
+    padding: 12px 20px 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+#calendar2, #calendar {
+    width: 15%;
+    font-size: 14px;
+    padding: 12px 20px 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
