@@ -47,3 +47,6 @@ Initialize the database from django:
 
 Start the server:
 ```python3 manage.py runserver```
+
+Reset database:
+```python manage.py flush```
