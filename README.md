@@ -4,18 +4,19 @@
 
 ## Overview
 
-A face recognition based attendence system.
+A face recognition based attendence system with Raspberry Pi. (Note: At least Raspberry Pi 3 to run smoothly.)
 
 Python module providing face recognition functionalities:
   - Managing faces photos
   - Training models
-  - Making predictions.
+  - Making predictions
 
 ## The recognition module
 ```__init__.py``` contains the face_cascade object, a common resource used in face detection.
 
 ```trainer.py``` is responsible of feeding the dataset to different models for training.
 Three models are available: ```LBPH, FisherFace``` and ```EigenFace```.
+The recognizer will compares three results from each model and get the most frequenct result.
 
 ```recognizer.py``` uses pretrained models to make predictions.
 
