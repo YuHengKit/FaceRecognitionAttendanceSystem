@@ -39,8 +39,8 @@ Install libraries: ```pip3 install -r requirements.txt```
 
 
 ## Running
-Please install postgreSQL and change the details in setting.py
-Initialize the database from django:
+-Please install postgreSQL and change the details in setting.py.
+-Initialize the database from django:
 - ```python3 manage.py makemigrations```
 - ```python3 manage.py migrate```
 - ```python3 manage.py createsuperuser```
