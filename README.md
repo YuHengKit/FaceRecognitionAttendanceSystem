@@ -1,6 +1,6 @@
 # tracker
 
-![alt homepage](https://github.com/Husseinfo/tracker/blob/master/static/images/homepage.png?raw=true)
+![alt homepage](https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/homepage.PNG?raw=true)
 
 ## Overview
 
