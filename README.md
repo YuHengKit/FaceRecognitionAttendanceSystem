@@ -30,7 +30,7 @@ The recognizer will compares three results from each model and get the most freq
 - Capture page: to take faces photos from a local or remote device
 - Train page: to train models
 - Attendence page: shows attendence records
-- A RESTful API interface to send attendence records (from the raspberry pi in the prototype device)
+- A RESTful API interface to send image and attendence records (from the raspberry pi in the prototype device)
 
 
 ## Environment
