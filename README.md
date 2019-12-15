@@ -39,7 +39,7 @@ Python: > 3.6
 Install libraries: ```pip3 install -r requirements.txt```
 
 
-## Running
+## Running / way to execute
 Please install postgreSQL and change the details in ```setting.py```.
 Initialize the database from django:
 - ```python3 manage.py makemigrations```
