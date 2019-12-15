@@ -2,6 +2,12 @@
 
 ![alt homepage](https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/homepage.PNG?raw=true)
 
+<h1>Team HKL</h1>
+<p>Members : </p>
+<p>1. HAU ZHE XUAN</p>
+<p>2. KIT YU HENG</p>
+<p>3. LIM JUN SHIUN</p>
+
 ## Overview
 
 A face recognition based attendence system with Raspberry Pi. (Note: At least Raspberry Pi 3 to run smoothly.)
