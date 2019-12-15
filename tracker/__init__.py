@@ -1,11 +1,13 @@
 from tracker.recognition.recognizer import Recognizer
 from tracker.recognition.trainer import Trainer
+import yaml
+
 #from tracker.mqtt import Mqtt
 
 photos_path = 'static/photos'
 temp_path = 'static/temp'
 train_file_name = 'static/trained'
-lbph_train_file_name = 'static/trained_lbph.yml'
+train_file_name1 = 'static/trained.yaml'
 video_source = 0
 
 
