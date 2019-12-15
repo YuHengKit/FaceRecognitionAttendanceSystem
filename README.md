@@ -26,7 +26,7 @@ Python module providing face recognition functionalities:
 
 ```trainer.py``` is responsible of feeding the dataset to different models for training.
 
-1.Three models are available but unused: ```LBPH, FisherFace``` and ```EigenFace```. The recognizer will compares three results from each model and get the most frequenct result.
+1. Three models are available but unused: ```LBPH, FisherFace``` and ```EigenFace```. The recognizer will compares three results from each model and get the most frequenct result.
 
 2. The system was upgraded with model using face_recognition library to recognize the face. One input image is needed for each user.
 
