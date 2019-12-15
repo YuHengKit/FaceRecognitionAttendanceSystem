@@ -28,7 +28,7 @@ Python module providing face recognition functionalities:
 
 1. Three models are available but unused: ```LBPH, FisherFace``` and ```EigenFace```. The recognizer will compares three results from each model and get the most frequenct result.
 
-2. The system was upgraded with model using face_recognition library to recognize the face. One input image is needed for each user. The algorithm of this recognizer is HOG.
+2. The system was upgraded with model using ```face_recognition``` library to recognize the face. One input image is needed for each user. The algorithm of this recognizer is HOG.
 
 ```recognizer.py``` uses pretrained models to make predictions.
 
