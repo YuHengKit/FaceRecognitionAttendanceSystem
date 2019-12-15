@@ -6,7 +6,7 @@ from time import sleep
 import cv2
 import base64
 from urllib import request
-from tracker import lbph_train_file_name
+from tracker import train_file_name1
 from tracker import trainer
 from tracker import photos_path
 from tracker.recognition import face_cascade as detector
@@ -28,13 +28,13 @@ def time_spent(sec):
 
 def last_training():
     try:
-        return time_spent(os.path.getmtime(lbph_train_file_name))
+        return time_spent(os.path.getmtime(train_file_name1))
     except:
         return 'N/A'
 
 
 def is_model_trained():
-    return os.path.isfile(lbph_train_file_name)
+    return os.path.isfile(train_file_name1)
 
 
 def are_there_photos():
