@@ -1,10 +1,12 @@
 #!/usr/local/bin/python3
-
+import yaml
 import cv2
 import numpy as np
 from collections import Counter
-
+import face_recognition
+from tracker.recognition.trainer import Trainer
 from tracker.recognition import face_cascade
+from PIL import Image
 
 
 class Recognizer:
@@ -21,19 +23,29 @@ class Recognizer:
         :param source: Video source to read from in case of reading from a camera
         :param threshold: Threshold between recognizing and not recognizing an input photo
         """
+        photos_path = 'static/photos'
+        train_file_name = 'static/trained'
+        #self.trainer=Trainer(photos_path,train_file_name)
+        trainer=Trainer(photos_path,train_file_name)
+        self.known_faces=trainer.train()
+
+        #self.known_faces=trainer.train()
         self.recognizer_filename = recognizer_filename
         self.source = source
         self.video_capture = None
         self.max_width = max_width
         self.max_height = max_height
         #self.lbph_rec = self.eigenface_rec = self.fisherface_rec = None
-        #self.reload()
+        #self.reload()C:\Users\Heng1222\Desktop\tracker-master\tracker-master\static\photos
         self.lbph_rec = cv2.face.LBPHFaceRecognizer_create()
         self.eigenface_rec = cv2.face.EigenFaceRecognizer_create()
         self.fisherface_rec = cv2.face.FisherFaceRecognizer_create()
         self.lbph_rec.read("static/trained_lbph.yml")
         self.eigenface_rec.read("static/trained_eigenface.yml")
         self.fisherface_rec.read("static/trained_fisherface.yml")
+
+
+
 
     def reload(self):
         self.lbph_rec = cv2.face.LBPHFaceRecognizer_create()
@@ -63,53 +75,84 @@ class Recognizer:
         image = np.array(self.video_capture.read()[1])
         return image, cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-    def predict(self, *grays):
-        res = []
+ #   def predict(self, *grays):
+   #     res = []
         #print("Start Predict")
 
-        for gray in grays:
+    #    for gray in grays:
             #print("Stage 1")
-            faces = face_cascade.detectMultiScale(gray)
-            #print("Face Detected")
-            #print(faces)
-            for (x, y, w, h) in faces:
-                if self.lbph_rec is not None:
-                    try:
+    #        faces = face_cascade.detectMultiScale(gray)
+     #       #print("Face Detected")
+      #      #print(faces)
+      #      for (x, y, w, h) in faces:
+      #          if self.lbph_rec is not None:
+      #              try:
                         #print("OMG")
-                        output=self.lbph_rec.predict(gray[y: y + h, x: x + w])
+      #                  output=self.lbph_rec.predict(gray[y: y + h, x: x + w])
                         #print(output)
-                        res.append(output)
+      #                  res.append(output)
                         #print("haha")
                         #print(res)
-                    except:
+      #              except:
                         #print("No")
-                        res.append(None)
-            for recognizer in (self.eigenface_rec, self.fisherface_rec):
+      #                  res.append(None)
+      #      for recognizer in (self.eigenface_rec, self.fisherface_rec):
                 #print("stage2")
-                faces = face_cascade.detectMultiScale(gray)
-                for (x, y, w, h) in faces:
-                    img = gray[y: y + h, x: x + w].copy()
-                    img = cv2.resize(img, (self.max_width, self.max_height))
-                    if recognizer is not None:
-                        try:
-                            #print("Stage3")
-                            out=recognizer.predict(img)
-                            res.append(out)
+      #          faces = face_cascade.detectMultiScale(gray)
+      #          for (x, y, w, h) in faces:
+      #              img = gray[y: y + h, x: x + w].copy()
+      #             img = cv2.resize(img, (self.max_width, self.max_height))
+      #              if recognizer is not None:
+      #                  try:
+      #                      #print("Stage3")
+      #                      out=recognizer.predict(img)
+      #                      res.append(out)
                             #print("hahaha")
                             #print(res)
-                        except:
+      #                  except:
                             #print("NONO")
-                            res.append(None)
-        if not res: return None, None
-        if len(res) < len(grays) * 3:
-            for i in range(len(grays) * 3 - len(res)):
-                res.append(None)
-        top, occur = Counter(res).most_common(1)[0]
-        #print(occur)
-        percent = int((top[1]))
-        #print(percent)
-        #print(top)   
-        return int(top[0]), int(percent)
+      #                      res.append(None)
+      #  if not res: return None, None
+      #  if len(res) < len(grays) * 3:
+      #      for i in range(len(grays) * 3 - len(res)):
+      #          res.append(None)
+      #  top, occur = Counter(res).most_common(1)[0]
+      #  print(occur)
+      #  percent = int((top[1]))
+      #  print(percent)
+      #  print(top)   
+      # return int(top[0]), int(percent)'''
+
+    def predict(self, *grays):
+        with open(r'static/trained.yaml') as file:
+            documents = yaml.load(file, Loader=yaml.Loader)
+        self.known_faces=np.array(documents)
+        print(self.known_faces)
+        face_locations = []
+        face_encodings = []
+        match=[]
+        for gray in grays:
+                faces = face_cascade.detectMultiScale(gray)
+                for (x, y, w, h) in faces:
+                      img = gray.copy()
+                      img = Image.fromarray(img).save('static/temp/User.png')
+                      img1 = face_recognition.load_image_file("static/temp/User.png")       #load image that need to be processed
+                      face_locations = face_recognition.face_locations(img1, model='hog')
+                      face_encodings = face_recognition.face_encodings(img1, face_locations)
+    
+        for face_encoding in face_encodings:   #face recognition start
+                match = face_recognition.compare_faces(self.known_faces, face_encoding, tolerance=0.30)
+        print(match)
+        id=0
+        for i in range(len(match)):
+            if match[i]==True:
+                id = i+1
+            else:
+                pass
+
+        print(id)
+        percent=100
+        return int(id), int(percent)
 
     def get_image_label(self, *paths):
         """
