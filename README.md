@@ -16,6 +16,10 @@ Python module providing face recognition functionalities:
   - Managing faces photos
   - Training models
   - Making predictions
+  
+   <h1>System Architecture</h1>
+<img src="https://user-images.githubusercontent.com/11400016/70865130-c93c1400-1f94-11ea-8d47-598a18b3ced9.PNG" />
+
 
 ## The recognition module
 ```__init__.py``` contains the face_cascade object, a common resource used in face detection.
