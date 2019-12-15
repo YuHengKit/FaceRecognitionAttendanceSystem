@@ -52,6 +52,7 @@ Install libraries: ```pip3 install -r requirements.txt```
 
 
 ## Running / way to execute
+Please create ```photos``` , ```temp``` and ```profile``` folder in static folder.
 Please install postgreSQL and change the details in ```setting.py```.
 Initialize the database from django:
 - ```python3 manage.py makemigrations```
