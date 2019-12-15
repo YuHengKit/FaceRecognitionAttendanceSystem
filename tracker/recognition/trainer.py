@@ -1,10 +1,11 @@
 #!/usr/local/bin/python3
 
 import os
-
+import face_recognition
 import cv2
 import numpy as np
-
+#from tracker.models import User
+import yaml
 from tracker.recognition import face_cascade
 
 
@@ -71,24 +72,37 @@ class Trainer:
                 labels.append(nbr)
         return images, np.array(labels)
 
+#   def train(self):
+#        """
+#        Trains a model from dataset, saves the file to export path
+#        This process may take several minutes, make sure you have an SSD!
+#        :return: 
+#        """
+#        # create the face recognizer object
+#        lbph_rec = cv2.face.LBPHFaceRecognizer_create()
+#        eigenface_rec = cv2.face.EigenFaceRecognizer_create()
+#        fisherface_rec = cv2.face.FisherFaceRecognizer_create()
+
+#        # Train LBPH recognizer
+#        images, labels = self.get_images_and_labels()
+#        lbph_rec.train(images, labels)
+#        lbph_rec.save(self.export + '_lbph.yml')
+
+#        # Train other two recognizers
+#        images, labels = self.get_images_and_labels(same_size=True)
+#        for recognizer, name in zip((eigenface_rec, fisherface_rec), ('eigenface', 'fisherface')):
+#            recognizer.train(images, labels)
+#            recognizer.save(self.export + '_' + name + '.yml')
+
     def train(self):
-        """
-        Trains a model from dataset, saves the file to export path
-        This process may take several minutes, make sure you have an SSD!
-        :return: 
-        """
-        # create the face recognizer object
-        lbph_rec = cv2.face.LBPHFaceRecognizer_create()
-        eigenface_rec = cv2.face.EigenFaceRecognizer_create()
-        fisherface_rec = cv2.face.FisherFaceRecognizer_create(2)
-
-        # Train LBPH recognizer
-        images, labels = self.get_images_and_labels()
-        lbph_rec.train(images, labels)
-        lbph_rec.save(self.export + '_lbph.yml')
-
-        # Train other two recognizers
-        images, labels = self.get_images_and_labels(same_size=True)
-        for recognizer, name in zip((eigenface_rec, fisherface_rec), ('eigenface', 'fisherface')):
-            recognizer.train(images, labels)
-            recognizer.save(self.export + '_' + name + '.yml')
+        self.known_faces=[]
+        for i in range(len(os.listdir(self.photos))):
+            image = face_recognition.load_image_file("static/photos/"+str(i+1)+"_0.png")
+            #print(i)
+            k=face_recognition.face_encodings(image)[0]
+            #print(k)
+            self.known_faces.append(k)
+            #print(self.known_faces)
+        with open(r'static/trained.yaml', 'w') as file:
+            documents = yaml.dump(self.known_faces, file)
+        return self.known_faces
