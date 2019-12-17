@@ -72,3 +72,13 @@ Start the server:
 
 Reset database:
 ```python manage.py flush```
+
+<h1>Class Diagram</h1>
+<img src="https://user-images.githubusercontent.com/11400016/69170362-eec03400-0b34-11ea-9c4d-0a9aa00d3b3b.png" />
+
+<h1>Database Table</h1>
+<img src="https://user-images.githubusercontent.com/11400016/70039481-04cdfa00-15f5-11ea-9fbb-ff192d5572bd.png" />
+
+<h1>Normalized Table</h1>
+<img src="https://user-images.githubusercontent.com/11400016/70039442-ecf67600-15f4-11ea-8384-3534617b4e74.PNG" />
+
