@@ -85,6 +85,7 @@ Register email:
 open a python script in server and run
 ```import yagmail```
 ```yagmail.register('mygmailusername', 'mygmailpassword')```
+Please change the email address in ```emailalert()``` that can be found in ```views.py```
 
 Reset database:
 ```python manage.py flush```
