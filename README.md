@@ -38,7 +38,7 @@ Funtions of the system:
 ## Normalized Table
 <img src="https://user-images.githubusercontent.com/11400016/70039442-ecf67600-15f4-11ea-8384-3534617b4e74.PNG" />
 
-## The recognition module
+## Recognition Module
 ```__init__.py``` contains the face_cascade object, a common resource used in face detection.
 
 ```trainer.py``` is responsible of feeding the dataset to different models for training.
@@ -52,7 +52,7 @@ Funtions of the system:
 ```capture.py``` adds photos to user profile.
 
 
-## The django web interface
+## The Django Web Interface
 - Login Page
 <img src="https://user-images.githubusercontent.com/55488934/70975527-14653c80-20e5-11ea-9ded-c7b46c9c59bc.jpg"/>
 
@@ -70,7 +70,7 @@ Python: > 3.6
 Install libraries: ```pip3 install -r requirements.txt```
 
 
-## Running / way to execute
+## Running / Way to Execute
 Please create ```photos``` , ```temp``` and ```profile``` folder in static folder.
 Please install postgreSQL and change the details in ```setting.py```.
 Initialize the database from django:
