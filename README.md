@@ -10,7 +10,7 @@
 
 ## Overview
 
-A face recognition based attendence system with Raspberry Pi. (Note: At least Raspberry Pi 3 to run smoothly.)
+A face recognition based attendance system with Raspberry Pi. (Note: At least Raspberry Pi 3 to run smoothly.)
 
 Python module providing face recognition functionalities:
   - Managing faces photos
