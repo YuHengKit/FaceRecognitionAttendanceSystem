@@ -37,6 +37,8 @@ Python module providing face recognition functionalities:
 
 ## The django web interface
 - Login
+<img src="https://user-images.githubusercontent.com/55488934/70975527-14653c80-20e5-11ea-9ded-c7b46c9c59bc.jpg"/>
+
 - Homepage: showing last stats of the system
 - Add user: to add new faces
 - Capture page: to take faces photos from a local or remote device
