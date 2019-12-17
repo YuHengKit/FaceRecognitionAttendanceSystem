@@ -49,8 +49,8 @@ Python module providing face recognition functionalities:
 - Add user: to add new faces
 - Capture page: to take faces photos from a local or remote device
 - Train page: to train models
-- Attendence page: shows attendence records
-- A RESTful API interface to send image and attendence records (from the raspberry pi in the prototype device)
+- Attendance page: shows attendance records
+- A RESTful API interface to send image and attendance records (from the raspberry pi in the prototype device)
 
 
 ## Environment
