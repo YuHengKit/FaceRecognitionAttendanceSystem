@@ -73,6 +73,11 @@ Initialize the database from django:
 Start the server:
 ```python3 manage.py runserver```
 
+Register email:
+open a python script in server and run
+```import yagmail```
+```yagmail.register('mygmailusername', 'mygmailpassword')```
+
 Reset database:
 ```python manage.py flush```
 
