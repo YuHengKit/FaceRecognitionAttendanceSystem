@@ -17,7 +17,7 @@ Funtions of the system:
   - User Management
   - Recognizer Training
   - Email Notification for Latecomers
-  - Attendance Record
+  - Attendance Record (Using ```yagmail``` library)
   
   
 ## System Architecture
@@ -29,6 +29,14 @@ Funtions of the system:
 ## Entity-Relationship Diagram
 <img src="https://user-images.githubusercontent.com/11400016/67187172-3b243100-f41c-11e9-8e39-abd7306cb451.png" />
 
+## Class Diagram
+<img src="https://user-images.githubusercontent.com/11400016/69170362-eec03400-0b34-11ea-9c4d-0a9aa00d3b3b.png" />
+
+## Database Table
+<img src="https://user-images.githubusercontent.com/11400016/70039481-04cdfa00-15f5-11ea-9fbb-ff192d5572bd.png" />
+
+## Normalized Table
+<img src="https://user-images.githubusercontent.com/11400016/70039442-ecf67600-15f4-11ea-8384-3534617b4e74.PNG" />
 
 ## The recognition module
 ```__init__.py``` contains the face_cascade object, a common resource used in face detection.
@@ -45,11 +53,11 @@ Funtions of the system:
 
 
 ## The django web interface
-- Login
+- Login Page
 <img src="https://user-images.githubusercontent.com/55488934/70975527-14653c80-20e5-11ea-9ded-c7b46c9c59bc.jpg"/>
 
 - Homepage: showing last stats of the system
-- Add user: to add new faces
+- Add user: to add new user
 - Capture page: to take faces photos from a local or remote device
 - Train page: to train models
 - Attendance page: shows attendance records
@@ -81,12 +89,5 @@ open a python script in server and run
 Reset database:
 ```python manage.py flush```
 
-<h1>Class Diagram</h1>
-<img src="https://user-images.githubusercontent.com/11400016/69170362-eec03400-0b34-11ea-9c4d-0a9aa00d3b3b.png" />
 
-<h1>Database Table</h1>
-<img src="https://user-images.githubusercontent.com/11400016/70039481-04cdfa00-15f5-11ea-9fbb-ff192d5572bd.png" />
-
-<h1>Normalized Table</h1>
-<img src="https://user-images.githubusercontent.com/11400016/70039442-ecf67600-15f4-11ea-8384-3534617b4e74.PNG" />
 
