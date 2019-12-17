@@ -12,7 +12,7 @@
 
 A face recognition based attendance system with Raspberry Pi. (Note: At least Raspberry Pi 3 to run smoothly.)
 
-Funtions of the system
+Funtions of the system:
   - Photos Management
   - User Management
   - Recognizer Training
