@@ -17,8 +17,14 @@ Python module providing face recognition functionalities:
   - Training models
   - Making predictions
   
-   <h1>System Architecture</h1>
+<h1>System Architecture</h1>
 <img src="https://user-images.githubusercontent.com/11400016/70865130-c93c1400-1f94-11ea-8d47-598a18b3ced9.PNG" />
+
+<h1>Domain Model</h1>
+<img src="https://user-images.githubusercontent.com/11400016/67187139-2778ca80-f41c-11e9-9e0d-8ac02b5dc316.png" />
+
+<h1>Entity-Relationship Diagram</h1>
+<img src="https://user-images.githubusercontent.com/11400016/67187172-3b243100-f41c-11e9-8e39-abd7306cb451.png" />
 
 
 ## The recognition module
