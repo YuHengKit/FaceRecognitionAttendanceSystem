@@ -13,9 +13,11 @@
 A face recognition based attendance system with Raspberry Pi. (Note: At least Raspberry Pi 3 to run smoothly.)
 
 Python module providing face recognition functionalities:
-  - Managing faces photos
-  - Training models
-  - Making predictions
+  - Photos Management
+  - User Management
+  - Recognizer Training
+  - Email Notification for Latecomers
+  
   
 <h1>System Architecture</h1>
 <img src="https://user-images.githubusercontent.com/11400016/70865130-c93c1400-1f94-11ea-8d47-598a18b3ced9.PNG" />
