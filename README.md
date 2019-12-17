@@ -16,8 +16,8 @@ Funtions of the system:
   - Photos Management
   - User Management
   - Recognizer Training
-  - Email Notification for Latecomers
-  - Attendance Record (Using ```yagmail``` library)
+  - Email Notification for Latecomers (Using ```yagmail``` library)
+  - Attendance Record 
   
   
 ## System Architecture
