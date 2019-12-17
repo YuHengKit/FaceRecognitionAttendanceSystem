@@ -45,7 +45,7 @@ Funtions of the system:
 
 1. Three models are available but unused: ```LBPH, FisherFace``` and ```EigenFace```. The recognizer will compares three results from each model and get the most frequenct result.
 
-2. The system was upgraded with model using ```face_recognition``` library to recognize the face. Only One input image of each user is needed for training purpose. The algorithm of this recognizer is Convolutional Neural Network.
+2. The system was upgraded with model using ```face_recognition``` library to recognize the face. Only One input image of each user is needed for training purpose. The algorithm of this recognizer is Histogram of Gradient (HOG).
 
 ```recognizer.py``` uses pretrained models to make predictions.
 
