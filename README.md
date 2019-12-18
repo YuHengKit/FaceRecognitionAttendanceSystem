@@ -56,6 +56,7 @@ Funtions of the system:
 <img src="https://user-images.githubusercontent.com/55488934/70975527-14653c80-20e5-11ea-9ded-c7b46c9c59bc.jpg"/>
 
 - Homepage: showing last stats of the system
+<img src="https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/homepage.PNG?raw=true"/>
 
 - Add user: to add new user
 <img src="https://user-images.githubusercontent.com/55488934/71083278-99c41c00-21cd-11ea-94de-e246b84d416f.jpeg"/>
