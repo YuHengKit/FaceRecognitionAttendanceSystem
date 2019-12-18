@@ -40,3 +40,6 @@
 - Train page: to train models
 - Attendance page: shows attendance records
 - A RESTful API interface to send image and attendance records (from the raspberry pi in the prototype device)
+
+## Normalized Table
+<img src="https://user-images.githubusercontent.com/11400016/70039442-ecf67600-15f4-11ea-8384-3534617b4e74.PNG" />
