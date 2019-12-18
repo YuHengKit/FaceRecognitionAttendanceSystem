@@ -29,3 +29,15 @@
 
 ## Database Tables
 <img src="https://user-images.githubusercontent.com/11400016/70039481-04cdfa00-15f5-11ea-9fbb-ff192d5572bd.png" />
+
+## Class Diagram
+<img src="https://user-images.githubusercontent.com/11400016/69170362-eec03400-0b34-11ea-9c4d-0a9aa00d3b3b.png" />
+
+## User Interface
+- Login Page
+- Homepage: showing last stats of the system
+- Add user: to add new user
+- Capture page: to take faces photos from a local or remote device
+- Train page: to train models
+- Attendance page: shows attendance records
+- A RESTful API interface to send image and attendance records (from the raspberry pi in the prototype device)
