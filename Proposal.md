@@ -24,7 +24,7 @@
 <img src="https://user-images.githubusercontent.com/55488934/71083649-7baaeb80-21ce-11ea-8ad9-2909ace76bf3.png" />
 
 ## Entity-Relationship Diagram
-<img src="https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/Entity%20Relationship%20Diagram.png" />
+<img src="https://user-images.githubusercontent.com/55488934/71083676-88c7da80-21ce-11ea-9032-26095b28cf89.png" />
 
 ## Database Tables
 <img src="https://user-images.githubusercontent.com/11400016/70039481-04cdfa00-15f5-11ea-9fbb-ff192d5572bd.png" />
