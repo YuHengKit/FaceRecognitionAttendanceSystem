@@ -21,7 +21,7 @@
 <img src="https://user-images.githubusercontent.com/11400016/70865130-c93c1400-1f94-11ea-8d47-598a18b3ced9.PNG" />
 
 ## Domain Model
-<img src="https://github.com/YuHengKit/FaceRecognitionAttendanceSystem/blob/master/Domain%20Model.png" />
+<img src="https://user-images.githubusercontent.com/55488934/71083649-7baaeb80-21ce-11ea-8ad9-2909ace76bf3.png" />
 
 ## Entity-Relationship Diagram
 <img src="https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/Entity%20Relationship%20Diagram.png" />
