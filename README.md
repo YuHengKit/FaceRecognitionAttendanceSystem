@@ -24,10 +24,10 @@ Funtions of the system:
 <img src="https://user-images.githubusercontent.com/11400016/70865130-c93c1400-1f94-11ea-8d47-598a18b3ced9.PNG" />
 
 ## Domain Model
-<img src="https://github.com/YuHengKit/FaceRecognitionAttendanceSystem/blob/master/Domain%20Model.png" />
+<img src="https://user-images.githubusercontent.com/11400016/71082333-e3ac0280-21cb-11ea-90a3-d44a43f54227.png" />
 
 ## Entity-Relationship Diagram
-<img src="https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/Entity%20Relationship%20Diagram.png" />
+<img src="https://user-images.githubusercontent.com/11400016/71082397-01796780-21cc-11ea-935b-981a18522041.png" />
 
 ## Class Diagram
 <img src="https://user-images.githubusercontent.com/11400016/69170362-eec03400-0b34-11ea-9c4d-0a9aa00d3b3b.png" />
