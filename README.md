@@ -57,7 +57,10 @@ Funtions of the system:
 <img src="https://user-images.githubusercontent.com/55488934/70975527-14653c80-20e5-11ea-9ded-c7b46c9c59bc.jpg"/>
 
 - Homepage: showing last stats of the system
+
 - Add user: to add new user
+<img src="https://user-images.githubusercontent.com/55488934/71082964-f8d56100-21cc-11ea-8fca-c680cd3897b6.jpeg"/>
+
 - Capture page: to take faces photos from a local or remote device
 - Train page: to train models
 - Attendance page: shows attendance records
