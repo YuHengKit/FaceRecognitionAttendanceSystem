@@ -1,5 +1,4 @@
 # Face Recognition Attendance System
-
 ![alt homepage](https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/homepage.PNG?raw=true)
 
 <h1>Team HKL</h1>
@@ -62,6 +61,8 @@ Funtions of the system:
 <img src="https://user-images.githubusercontent.com/55488934/71082964-f8d56100-21cc-11ea-8fca-c680cd3897b6.jpeg"/>
 
 - Capture page: to take faces photos from a local or remote device
+<img src="https://user-images.githubusercontent.com/55488934/71083168-5e295200-21cd-11ea-9009-de8ae80d286e.jpeg"/>
+
 - Train page: to train models
 - Attendance page: shows attendance records
 - A RESTful API interface to send image and attendance records (from the raspberry pi in the prototype device)
