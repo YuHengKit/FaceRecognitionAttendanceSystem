@@ -3,7 +3,6 @@
 
 <h1>Title</h1>
 <body>Face Recognition Attendance System</body>
-<img src="https://user-images.githubusercontent.com/55488934/71063738-573c1880-21a8-11ea-9fdc-4aa43c383ab7.png" />
 
 
 <h1>Team HKL</h1>
