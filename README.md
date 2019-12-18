@@ -58,6 +58,7 @@ Funtions of the system:
 - Homepage: showing last stats of the system
 
 - Add user: to add new user
+<img src="https://user-images.githubusercontent.com/55488934/71083278-99c41c00-21cd-11ea-94de-e246b84d416f.jpeg"/>
 
 - Capture page: to take faces photos from a local or remote device
 <img src="https://user-images.githubusercontent.com/55488934/71083168-5e295200-21cd-11ea-9009-de8ae80d286e.jpeg"/>
