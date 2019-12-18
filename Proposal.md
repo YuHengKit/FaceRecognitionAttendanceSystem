@@ -23,3 +23,9 @@
 
 ## Domain Model
 <img src="https://github.com/YuHengKit/FaceRecognitionAttendanceSystem/blob/master/Domain%20Model.png" />
+
+## Entity-Relationship Diagram
+<img src="https://github.com/YuHengKit/FaceRecognitionSystem/blob/master/Entity%20Relationship%20Diagram.png" />
+
+## Database Tables
+<img src="https://user-images.githubusercontent.com/11400016/70039481-04cdfa00-15f5-11ea-9fbb-ff192d5572bd.png" />
