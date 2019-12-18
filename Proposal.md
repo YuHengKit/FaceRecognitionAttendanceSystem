@@ -16,5 +16,8 @@
 <p>The data of image will saved in Cloud Database that use for data storing. After that, the data stored will send to another Database to go through face recognition process. Data of image will be recognized and classify according to data saved in database. Classified face data will be send to Attendance System Management to data record purpose.</p> 
 <p>The data of user such as ID, Name, Check In and Check Out Time will be recorded. If there is a feedback, it will be send to management based on the requirements.</p>
 
-<h1>System Architecture</h1>
+## System Architecture
 <img src="https://user-images.githubusercontent.com/11400016/70865130-c93c1400-1f94-11ea-8d47-598a18b3ced9.PNG" />
+
+## Domain Model
+<img src="https://github.com/YuHengKit/FaceRecognitionAttendanceSystem/blob/master/Domain%20Model.png" />
