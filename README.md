@@ -64,6 +64,8 @@ Funtions of the system:
 
 - Train page: to train models
 - Attendance page: shows attendance records
+<img src="https://user-images.githubusercontent.com/55488934/71083231-80bb6b00-21cd-11ea-8c96-3a91830ccdab.jpeg"/>
+
 - A RESTful API interface to send image and attendance records (from the raspberry pi in the prototype device)
 
 
