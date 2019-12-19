@@ -12,7 +12,8 @@ import base64
 import json
 
 #import crop
-URL = 'http://127.0.0.1:8000/api/attendance/'
+#Set url of API
+URL = 'http://127.0.0.1:8000/api/attendance/'       
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 cam = cv2.VideoCapture(0)
@@ -25,7 +26,7 @@ while True:
     images = []
     ret, img =cam.read()
     img = cv2.flip(img, 1) # NO Flip vertically
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)    # Set image to grayscale
     faces = face_cascade.detectMultiScale( 
         gray,
         scaleFactor = 1.3,
@@ -50,11 +51,11 @@ while True:
             response = requests.post(URL, json=data)
             #response.c
             print(response.status_code)
-            if response.status_code == 201:
-                data = json.loads(response.text)
-                user = str(data['user'])
+            if response.status_code == 201:         #if user recognized
+                data = json.loads(response.text)    #read data from json file
+                user = str(data['user'])            #read user's data
                 print('{}: {}'.format(user, 'IN' if data['inout'] else 'OUT'))
-            else:
+            else:                                   #if user not recognized
                 print('Unknown user')
             time.sleep(10)
     cv2.namedWindow('Face Detection', cv2.WINDOW_NORMAL)
