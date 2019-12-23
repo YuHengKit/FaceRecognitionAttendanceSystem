@@ -37,6 +37,9 @@ Funtions of the system:
 ## Normalized Table
 <img src="https://user-images.githubusercontent.com/11400016/70039442-ecf67600-15f4-11ea-8384-3534617b4e74.PNG" />
 
+## Sketch of System
+<img src="https://user-images.githubusercontent.com/11400016/71343122-d27f3f00-2599-11ea-9239-17f4819b103e.jpg" />
+
 ## Recognition Module
 ```__init__.py``` contains the face_cascade object, a common resource used in face detection.
 
