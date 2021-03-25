@@ -1,5 +1,5 @@
 psycopg2==2.7.1
 rest_framework==3.6.3
 yagmail==0.10.189
-pyyaml==5.2
+pyyaml==5.4
 face_recognition==1.2.3
